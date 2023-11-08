@@ -1,2 +1,0 @@
-InterfazDeCompras
-trabajofinalavance.TrabajoFinalAvance
