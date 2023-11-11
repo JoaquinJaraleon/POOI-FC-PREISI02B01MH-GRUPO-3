@@ -5,6 +5,7 @@
 package Imagenes;
 
 import Cliente.ClientesActuales;
+import java.awt.event.ActionListener;
 
 /**
  *
@@ -180,12 +181,17 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBRegistrarseActionPerformed
+        this.dispose();
+        Register s = new Register(clientes);
+        s.setVisible(true);
         
     }//GEN-LAST:event_jBRegistrarseActionPerformed
 
     private void jBIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBIniciarSesionActionPerformed
 
+        
         clientes.iniciarSesion(jEmail.getText(), jContraseña.getText());
+        
         
     }//GEN-LAST:event_jBIniciarSesionActionPerformed
 
@@ -202,6 +208,8 @@ public class Login extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
