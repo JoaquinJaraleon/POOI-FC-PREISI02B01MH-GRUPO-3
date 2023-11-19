@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Imagenes;
+package interfaces;
 
 import Cliente.ClientesActuales;
 import java.awt.event.ActionListener;
@@ -53,28 +53,18 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesDorita/dorita.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("¡Bienvenidos!");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Email");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Contraseña");
 
-        jEmail.setBackground(new java.awt.Color(255, 255, 255));
-
-        jContraseña.setBackground(new java.awt.Color(255, 255, 255));
-
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("¿Aún no tienes una cuenta?");
 
-        jBRegistrarse.setBackground(new java.awt.Color(255, 255, 255));
         jBRegistrarse.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jBRegistrarse.setForeground(new java.awt.Color(0, 0, 0));
         jBRegistrarse.setText("Registrate");
         jBRegistrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,9 +72,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jBIniciarSesion.setBackground(new java.awt.Color(255, 255, 255));
         jBIniciarSesion.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jBIniciarSesion.setForeground(new java.awt.Color(0, 0, 0));
         jBIniciarSesion.setText("Iniciar Sesion");
         jBIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

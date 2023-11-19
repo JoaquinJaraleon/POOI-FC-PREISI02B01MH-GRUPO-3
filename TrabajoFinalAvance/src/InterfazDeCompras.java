@@ -1,7 +1,7 @@
 
 import Cliente.ClientesActuales;
-import Imagenes.Login;
-import Imagenes.Register;
+import interfaces.Login;
+import interfaces.Register;
 import Producto.ProductosActuales;
 import java.awt.event.ActionListener;
 import javax.swing.*;

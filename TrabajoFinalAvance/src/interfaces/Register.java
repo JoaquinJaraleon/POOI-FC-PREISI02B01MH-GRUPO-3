@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Imagenes;
+package interfaces;
 
 import Cliente.ClientesActuales;
 import javax.swing.JOptionPane;
@@ -57,40 +57,28 @@ public class Register extends javax.swing.JFrame {
         jLabel2.setText("Registrate");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Email");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Nombre");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Apellido");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Contraseña");
 
-        jNombre.setBackground(new java.awt.Color(255, 255, 255));
-
-        jApellido.setBackground(new java.awt.Color(255, 255, 255));
         jApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jApellidoActionPerformed(evt);
             }
         });
 
-        jEmail.setBackground(new java.awt.Color(255, 255, 255));
-
-        jContraseña1.setBackground(new java.awt.Color(255, 255, 255));
         jContraseña1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jContraseña1ActionPerformed(evt);
             }
         });
-
-        jContraseña2.setBackground(new java.awt.Color(255, 255, 255));
 
         jCrear.setBackground(new java.awt.Color(0, 102, 204));
         jCrear.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
