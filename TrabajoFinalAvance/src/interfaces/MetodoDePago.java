@@ -35,6 +35,7 @@ public class MetodoDePago extends javax.swing.JFrame {
         créditoButton3 = new javax.swing.JButton();
         yapeButton4 = new javax.swing.JButton();
         plinButton1 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -119,6 +120,15 @@ public class MetodoDePago extends javax.swing.JFrame {
         });
         bGPanel1.add(plinButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 400, 40));
 
+        jButton1.setBackground(new java.awt.Color(102, 204, 255));
+        jButton1.setText("Volver al Menú Principal");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        bGPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 170, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -167,6 +177,13 @@ public class MetodoDePago extends javax.swing.JFrame {
         this.dispose(); */
     }//GEN-LAST:event_plinButton1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Menu newframe = new Menu();
+        newframe.setVisible(true);
+        newframe.setLocationRelativeTo(null);
+        this.dispose();    // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -207,6 +224,7 @@ public class MetodoDePago extends javax.swing.JFrame {
     private javax.swing.JButton créditoButton3;
     private javax.swing.JButton débitoButton2;
     private javax.swing.JLabel escogeLabel1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton plinButton1;
     private javax.swing.JLabel tittleLabel3;
