@@ -155,26 +155,26 @@ public class MetodoDePago extends javax.swing.JFrame {
 
     private void créditoButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_créditoButton3ActionPerformed
         // TODO add your handling code here:
-        /*TarjetaCredito credito = new TarjetaCredito();
+        Credito credito = new Credito();
         credito.setVisible(true);
         credito.setLocationRelativeTo(null);
-        this.dispose();*/
+        this.dispose();
     }//GEN-LAST:event_créditoButton3ActionPerformed
 
     private void yapeButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yapeButton4ActionPerformed
         // TODO add your handling code here:
-       /* Yape yape = new Yape();
+        Yape yape = new Yape();
         yape.setVisible(true);
         yape.setLocationRelativeTo(null);
-        this.dispose(); */
+        this.dispose(); 
     }//GEN-LAST:event_yapeButton4ActionPerformed
 
     private void plinButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plinButton1ActionPerformed
         // TODO add your handling code here:
-       /* Plin plin = new Plin();
+       Plin plin = new Plin();
         plin.setVisible(true);
         plin.setLocationRelativeTo(null);
-        this.dispose(); */
+        this.dispose(); 
     }//GEN-LAST:event_plinButton1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

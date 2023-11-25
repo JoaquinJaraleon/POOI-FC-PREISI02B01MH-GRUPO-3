@@ -115,12 +115,10 @@ public class CompraExitosa extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void volverButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverButtonActionPerformed
-        // TODO add your handling code here:
-        /*Menu menu = new Menu();
+        Menu menu = new Menu();
         menu.setVisible(true);
         menu.setLocationRelativeTo(null);
-        this.dispose();*/
-
+        this.dispose();
     }//GEN-LAST:event_volverButtonActionPerformed
 
     private void salirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirButtonActionPerformed

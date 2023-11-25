@@ -141,7 +141,7 @@ public class Productos extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addComponent(tittleLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton5)
                 .addGap(18, 18, 18)
@@ -286,25 +286,28 @@ public class Productos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        this.dispose();
         CarritoCompra newframe = new CarritoCompra();
         newframe.setVisible(true);
         newframe.setLocationRelativeTo(null);
-        this.dispose();
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        this.dispose();
         Menu newframe = new Menu();
         newframe.setVisible(true);
         newframe.setLocationRelativeTo(null);
-        this.dispose();    // TODO add your handling code here:
+            // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        this.dispose();
         Productos newframe = new Productos();
         newframe.setVisible(true);
         newframe.setLocationRelativeTo(null);
-        this.dispose();
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**

@@ -5,6 +5,9 @@
 package interfaces;
 
 import Cliente.ClientesActuales;
+import java.awt.Color;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,6 +24,97 @@ public class Register extends javax.swing.JFrame {
     public Register(ClientesActuales clientes) {
         this.clientes = clientes;
         initComponents();
+        
+        jNombre.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (jNombre.getText().equals("Nombre")) {
+                    jNombre.setText("");
+                    jNombre.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (jNombre.getText().isEmpty()) {
+                    jNombre.setText("Nombre");
+                    jNombre.setForeground(Color.GRAY);
+                }
+            }
+        });
+        
+        
+        jApellido.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (jApellido.getText().equals("Apellido")) {
+                    jApellido.setText("");
+                    jApellido.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (jApellido.getText().isEmpty()) {
+                    jApellido.setText("Apellido");
+                    jApellido.setForeground(Color.GRAY);
+                }
+            }
+        });
+        
+        jEmail.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (jEmail.getText().equals("Email")) {
+                    jEmail.setText("");
+                    jEmail.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (jEmail.getText().isEmpty()) {
+                    jEmail.setText("Email");
+                    jEmail.setForeground(Color.GRAY);
+                }
+            }
+        });
+        
+        jContraseña1.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (jContraseña1.getText().equals("Contraseña")) {
+                    jContraseña1.setText("");
+                    jContraseña1.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (jContraseña1.getText().isEmpty()) {
+                    jContraseña1.setText("Contraseña");
+                    jContraseña1.setForeground(Color.GRAY);
+                }
+            }
+        });
+        
+        jContraseña2.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (jContraseña2.getText().equals("Repetir Contraseña")) {
+                    jContraseña2.setText("");
+                    jContraseña2.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (jContraseña2.getText().isEmpty()) {
+                    jContraseña2.setText("Repetir Contraseña");
+                    jContraseña2.setForeground(Color.GRAY);
+                }
+            }
+        });
     }
 
     /**
@@ -45,6 +139,7 @@ public class Register extends javax.swing.JFrame {
         jContraseña1 = new javax.swing.JTextField();
         jContraseña2 = new javax.swing.JTextField();
         jCrear = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,17 +163,30 @@ public class Register extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel6.setText("Contraseña");
 
+        jNombre.setForeground(new java.awt.Color(153, 153, 153));
+        jNombre.setText("Nombre");
+
+        jApellido.setForeground(new java.awt.Color(153, 153, 153));
+        jApellido.setText("Apellido");
         jApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jApellidoActionPerformed(evt);
             }
         });
 
+        jEmail.setForeground(new java.awt.Color(153, 153, 153));
+        jEmail.setText("Email");
+
+        jContraseña1.setForeground(new java.awt.Color(153, 153, 153));
+        jContraseña1.setText("Contraseña");
         jContraseña1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jContraseña1ActionPerformed(evt);
             }
         });
+
+        jContraseña2.setForeground(new java.awt.Color(153, 153, 153));
+        jContraseña2.setText("Repetir Contraseña");
 
         jCrear.setBackground(new java.awt.Color(0, 102, 204));
         jCrear.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -87,6 +195,15 @@ public class Register extends javax.swing.JFrame {
         jCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCrearActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(0, 153, 255));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Regresar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -116,14 +233,19 @@ public class Register extends javax.swing.JFrame {
                                 .addComponent(jContraseña1))))
                     .addComponent(jLabel2))
                 .addGap(220, 220, 220))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(267, 267, 267))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,7 +274,9 @@ public class Register extends javax.swing.JFrame {
                 .addComponent(jContraseña2)
                 .addGap(18, 18, 18)
                 .addComponent(jCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(109, 109, 109))
+                .addGap(45, 45, 45)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -208,6 +332,12 @@ public class Register extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jContraseña1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.dispose();
+            Login s = new Login(clientes);
+            s.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -215,6 +345,7 @@ public class Register extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField jApellido;
+    private javax.swing.JButton jButton1;
     private javax.swing.JTextField jContraseña1;
     private javax.swing.JTextField jContraseña2;
     private javax.swing.JButton jCrear;

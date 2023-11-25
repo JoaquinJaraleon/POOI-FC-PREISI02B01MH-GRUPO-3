@@ -42,7 +42,7 @@ public class ClientesActuales {
         mostrar();
     }
     
-    public void iniciarSesion(String email, String contraseña) {
+    public boolean iniciarSesion(String email, String contraseña) {
        boolean inicio = false;
        
         for(Cliente cliente : clientes){
@@ -56,10 +56,11 @@ public class ClientesActuales {
         
         if(inicio){
             JOptionPane.showMessageDialog(null, "Inicio Exitoso");
+            return true;
         }else{
             JOptionPane.showMessageDialog(null, "Contraseña y/o Email incorrectos");
         }
-        
+        return false;
     }
     
     
